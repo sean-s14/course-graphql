@@ -1,0 +1,33 @@
+{
+  "name": "course-graphql",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sean-s14/course-graphql.git"
+  },
+  "keywords": [
+    "graphql",
+    "course",
+    "nodejs"
+  ],
+  "author": "Sean Stocker",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sean-s14/course-graphql/issues"
+  },
+  "homepage": "https://github.com/sean-s14/course-graphql#readme",
+  "dependencies": {
+    "apollo-server": "^3.12.0",
+    "graphql": "^16.8.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
