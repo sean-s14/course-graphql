@@ -61,4 +61,22 @@ exports.Mutation = {
     reviews.splice(reviewIndex, 1);
     return true;
   },
+  updateCategory: (parent, { id, input }, { categories }) => {
+    const category = categories.find((category) => category.id === id);
+    if (!category) return null;
+    Object.assign(category, input);
+    return category;
+  },
+  updateProduct: (parent, { id, input }, { products }) => {
+    const product = products.find((product) => product.id === id);
+    if (!product) return null;
+    Object.assign(product, input);
+    return product;
+  },
+  updateReview: (parent, { id, input }, { reviews }) => {
+    const review = reviews.find((review) => review.id === id);
+    if (!review) return null;
+    Object.assign(review, input);
+    return review;
+  },
 };
